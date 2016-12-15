@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Flexo-Regular';
+	font-weight: 400;
+	src: url("../fonts/285B7A_1_0.eot");
+	src: url("../fonts/285B7A_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/285B7A_1_0.woff") format("woff"), url("../fonts/285B7A_1_0.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: 'Flexo-Medium';
+	font-weight: 500;
+	src: url("../fonts/285B7A_2_0.eot");
+	src: url("../fonts/285B7A_2_0.eot?#iefix") format("embedded-opentype"), url("../fonts/285B7A_2_0.woff") format("woff"), url("../fonts/285B7A_2_0.ttf") format("truetype");
+}

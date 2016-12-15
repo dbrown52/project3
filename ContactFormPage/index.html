@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Davon's Contact Form</title>
+
+<script>
+
+function validateName(name) {
+  if (/^[a-z0-9][a-z0-9._\-]*$/.exec(name)) {
+    return true;
+  }
+  return false;
+}
+
+
+function validateForm() {
+    var x = document.forms["myForm"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address");
+        return false;
+    }
+}
+
+function phonenumber(inputtxt) {
+  var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+  if(inputtxt.value.match(phoneno)) {
+    return true;
+  }
+  else {
+    alert("message");
+    return false;
+  }
+}
+
+
+</script>
+
+</head>
+
+
+	<nav class="menu">
+            <ul>
+                <li><a href="http://urcsc174.org/dbrown/project3/LongScrollyHomepage/">Home</a></li>
+                <li><a href="http://urcsc174.org/dbrown/project3/PortfolioPage/">Portfolio Page</a></li>
+                <li><a class="active" href="http://urcsc174.org/dbrown/project3/ContactFormPage/">Contact Form</a></li>
+                <li><a href="http://urcsc174.org/dbrown/project3/ContactFormResults/">Contact Form Results</a></li>
+                
+            </ul>
+		</nav>	 
+
+
+<form id="contact-form" action="/" method="post">
+  <h3>Get in touch With Davon</h3><br><br>
+	<img src="images/contact.jpg" alt="Contact">
+  <div>
+    <label>
+      <span>Name: (required)</span>
+      <input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
+    </label>
+    <br><br>
+  </div>
+  <div>
+    <label>
+      <span>Email: (required)</span>
+      <input placeholder="Please enter your email address" type="email" tabindex="2" required>
+    </label>
+    <br><br>
+  </div>
+  <div>
+    <label>
+      <span>Telephone: (required)</span>
+      <input placeholder="Please enter your number" type="tel" tabindex="3" required>
+    </label>
+    <br><br>
+  </div>
+  <div>
+    <label>
+      <span>Message: (required)</span>
+      <textarea placeholder="Include all the details you can" tabindex="5" required></textarea>
+    </label>
+    <br><br>
+  </div>
+  <div>
+    <button name="submit" type="submit" id="contact-submit">Send Email</button>
+  </div>
+</form>
+
+
+<script>
+	(function() {
+
+		// Create input element for testing
+		var inputs = document.createElement('input');
+		
+		// Create the supports object
+		var supports = {};
+		
+		supports.autofocus   = 'autofocus' in inputs;
+		supports.required    = 'required' in inputs;
+		supports.placeholder = 'placeholder' in inputs;
+	
+		// Fallback for autofocus attribute
+		if(!supports.autofocus) {
+			
+		}
+		
+		// Fallback for required attribute
+		if(!supports.required) {
+			
+		}
+	
+		// Fallback for placeholder attribute
+		if(!supports.placeholder) {
+			
+		}
+		
+		// Change text inside send button on submit
+		var send = document.getElementById('contact-submit');
+		if(send) {
+			var dataText = send.getAttribute('data-text');
+			send.onclick = function() {
+				send.innerHTML = dataText;
+			}
+		}
+	
+	})();
+	</script>
+
+
+</body>
+</html>

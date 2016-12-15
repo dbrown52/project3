@@ -1,0 +1,46 @@
+/*	****************************************
+	Demo styles (for demo purposes only)
+	**************************************** */
+p { margin-top: 0; }
+
+.right {
+	float: right;
+	margin-left: 15px;
+}
+
+.frame {
+	border: 1px solid #666;
+	padding: 5px;
+}
+
+/*	****************************************
+	Modules (reusable classes)
+	**************************************** */
+.container {
+	margin: 0 auto;
+	width: 95%;
+	max-width: 960px; 
+
+}
+body{
+font-family: 'Audiowide', cursive;
+text-align: left;
+background-image:url('bola.gif');
+
+}
+.content {
+	text-align: left;
+	overflow: auto;
+}
+.h1{
+	position:fixed;
+	top:0;
+	z-index:1001;
+	margin:0;
+	display:flex;
+	color: blue;
+	text-shadow: 5px 5px 5px #000000;
+	font-size: 40px;
+	font-family: 'Audiowide', cursive;
+
+}

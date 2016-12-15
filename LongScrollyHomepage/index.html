@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Project 3 - Individual Project</title>
+    <link rel="stylesheet" href="css/long-scrolly.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="main-menu">
+        <ul>
+            <li><a href="#first">Intro To Davon</a></li>
+            <li><a href="#second">Major Accomplishments</a></li>
+		<li><a href="http://urcsc174.org/dbrown/project3/PortfolioPage/">Portfolio Page</a></li>
+                <li><a href="http://urcsc174.org/dbrown/project3/ContactFormPage/">Contact Form</a></li>
+                <li><a href="http://urcsc174.org/dbrown/project3/ContactFormResults/">Contact Form Results</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Top Section -->
+    <section id="first">
+        <div class="container">
+
+	<img src="images/nyc.jpg" alt="New York">
+
+            <h1>Intro To Davon</h1>
+
+            <div class="content">
+
+                <article>
+    <pj>My name is Davon Brown and I was born on the 8th of January, 1995 in New York City. My parents are Linda Chavis and Stanley Brown. My parents ensured I continued schooling despite all our hardships within my 21 years on this earth.</p>
+    </article>
+    
+    <aside>
+
+    <p>I, Davon Brown, is currently a student at the University of Rochester expected to graduate in May 2017 with a degree in Mathematics & Statistics.</p>
+
+    </aside>
+
+            </div><!-- .content -->
+
+       </div><!-- .container -->
+
+    </section>
+
+    <!-- Second Section -->
+    <section id="second">
+        <div class="container">
+
+            <h1>Major Accomplishments</h1>
+            <div class="subtitle"> WHAT HAVE DAVON DONE WITH HIS LIFE? Learn more about the facts of Davon and his capabilities that he brings to the table.</div>
+           
+	      <div class="content">
+              <div class="Aide">
+    
+    
+	<img src="images/kids.jpg" alt="Promise Academy" align="right">
+    <P><strong>After School Program Aide @ Promise Academy High School:</strong></p>
+
+    <ul>
+      <li> Supervised children in groups and individually and mediated conflict when needed.</li>
+      <li> Helped children cope with daily social interactions and learn appropriate social behaviors.</li>
+      <li> Maintained daily attendance and assisted in serving snacks to the program participants.</li>
+    </ul>
+
+    </div><!--.Aide-->      
+
+    <div class="Data">
+
+	
+    	<img src="images/data.jpg" alt="Numbers" align="right">
+    <p><strong>Data Intern @ College of Success Office:</strong></p>
+
+    <ul>
+      <li> Verified attendance, hours worked, and post information onto designated spreadsheet.</li>
+      <li> Submitted on a timely basis, accurate production and corresponding reports, such as timesheets and other documents.</li>
+      <li> Validate electronic data for error, and submit signed off and approved by director .</li>
+      <li> Factor in sick or excused pay when verifying hours worked.</li>
+    </ul>
+   
+      
+    
+    
+    </div><!--.Data--> 
+
+    <div class="Sales">
+
+    
+    	<img src="images/sale.png" alt="Burlington Coat Factory" align="right">
+    <p><strong>Sales Associate @ Burlington Coat Factory></strong></p>
+    
+    <ul>
+      <li> Greeted customers as they arrived and provided information about products and services.</li>
+      <li> Responded to customers' complaints and resolved their issues.</li>
+      <li> Assisted in stocking shelves, rotating merchandise and marking prices.</li>
+    <ul>
+    
+    
+    </div><!--.Sales-->   
+                
+
+            </div><!-- .content -->
+
+       </div><!-- .container -->
+
+    </section>
+
+<!-- Use the following JavaScript code to do the smooth-scroll thing on the internal links -->
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script>
+// From:    Smooth Scrolling by CHRIS COYIER, updated JANUARY 31, 2016
+//          https://css-tricks.com/snippets/jquery/smooth-scrolling
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 250);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+
+</body>
+
+</html>
